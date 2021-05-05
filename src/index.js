@@ -12,7 +12,7 @@ const productsV1 = require("./routes/product.router")
 
 const { initializeDBConnection } = require("./db/db.connect")
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // called before any route handler
 initializeDBConnection();
